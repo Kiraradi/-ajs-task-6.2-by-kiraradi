@@ -42,3 +42,18 @@ test('function test getSpecialAttacks', () => {
 
   expect(result).toEqual(rightResponse);
 });
+
+test('test2', () => {
+  const character = {
+    name: 'Лучник',
+    type: 'Bowman',
+    health: 50,
+    level: 3,
+    attack: 40,
+    defence: 10,
+  };
+
+  const rightResponse = [];
+  const result = getSpecialAttacks(character);
+  expect(result).toEqual(rightResponse);
+});
